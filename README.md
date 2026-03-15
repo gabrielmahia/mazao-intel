@@ -1,10 +1,12 @@
-# 🌾 Mazao Intel
+# 🌾 JuaMazao — Agricultural Price Intelligence Kenya
 
 Agricultural market price intelligence for Kenyan smallholders.
 
+[![Live App](https://img.shields.io/badge/Live%20App-mazao--intel.streamlit.app-FF4B4B?logo=streamlit)](https://mazao-intel.streamlit.app)
 [![CI](https://github.com/gabrielmahia/mazao-intel/actions/workflows/ci.yml/badge.svg)](https://github.com/gabrielmahia/mazao-intel/actions)
+[![License](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey)](LICENSE)
 
-**Live:** [mazao-intel.streamlit.app](https://mazao-intel.streamlit.app)
+> **Jua Mazao** /dʒuɑː mɑːzɑːɔ/ — *Kiswahili*: "Know your crops/produce".
 
 ## What it does
 
@@ -29,3 +31,24 @@ Fetched live every 6 hours. When unavailable, the app stops and says so — no f
 © 2026 Gabriel Mahia · CC BY-NC-ND 4.0  
 Data: WFP/HDX CC BY IGO 3.0  
 Not affiliated with WFP, HDX, or the Government of Kenya.
+---
+
+## Portfolio
+
+Part of a suite of civic and community tools built by [Gabriel Mahia](https://github.com/gabrielmahia):
+
+| App | What it does |
+|-----|-------------|
+| [🌊 Mafuriko](https://floodwatch-kenya.streamlit.app) | Flood risk & policy enforcement tracker — Kenya |
+| [💧 WapiMaji](https://wapimaji.streamlit.app) | Water stress & drought intelligence — 47 counties |
+| [🏛️ Macho ya Wananchi](https://civic-decoder.streamlit.app) | MP voting records, CDF spending, bill tracker |
+| [🌾 JuaMazao](https://mazao-intel.streamlit.app) | Live food price intelligence for smallholders |
+| [🏦 ChaguaSacco](https://sacco-scout.streamlit.app) | Compare Kenya SACCOs on dividends & loan rates |
+| [🛡️ Hesabu](https://budget-sentinel.streamlit.app) | County budget absorption tracker |
+| [🗺️ Hifadhi](https://hifadhi.streamlit.app) | Riparian encroachment & Water Act compliance map |
+| [💰 Hela](https://hela.streamlit.app) | Chama management for the 21st century |
+| [💸 TumaPesa](https://remit-lens.streamlit.app) | True cost remittance comparison — diaspora to Kenya |
+| [📊 Msimamo](https://quantum-maestro.streamlit.app) | Macro risk & trade intelligence terminal |
+| [🦁 Dagoretti](https://dagoretti-community-hub.streamlit.app) | Alumni atlas & community hub for Dagoretti High |
+| [⛪ Jumuia](https://catholicparishsteward.streamlit.app) | Catholic parish tools — church finder, pastoral care |
+
