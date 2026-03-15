@@ -155,7 +155,7 @@ with st.spinner("🌾 Loading WFP Kenya food price data…"):
 # ── Header ────────────────────────────────────────────────────────────────────
 st.markdown("""
 <div class="mz-header">
-  <h1>🌾 Mazao Intel</h1>
+  <h1>🌾 JuaMazao — Mazao Intel</h1>
   <p>Kenya crop market prices — powered by WFP/HDX · Nguvu ya Bei kwa Wakulima</p>
 </div>
 """, unsafe_allow_html=True)
@@ -415,6 +415,6 @@ with st.expander("📋 Full recent price data (last 60 days)"):
 # ── Footer ────────────────────────────────────────────────────────────────────
 st.divider()
 st.caption(
-    "Mazao Intel · Data: WFP Kenya Food Prices via HDX (CC BY IGO 3.0) · "
+    "JuaMazao · Data: WFP Kenya Food Prices via HDX (CC BY IGO 3.0) · "
     "App: CC BY-NC-ND 4.0 · contact@aikungfu.dev · Not affiliated with WFP or HDX"
 )
