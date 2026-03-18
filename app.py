@@ -21,6 +21,8 @@ from __future__ import annotations
 
 import io
 import urllib.request
+import xml.etree.ElementTree as _mET
+import re as _mre
 from datetime import datetime, date
 
 import pandas as pd
@@ -170,6 +172,18 @@ if is_live:
         f"{prices['date'].min().strftime('%b %Y')} – {prices['date'].max().strftime('%b %Y')}.",
         icon=None
     )
+
+# ── Agricultural rainfall signal ─────────────────────────────────────────
+_rain_agri = fetch_agri_rainfall()
+if any(v["total_mm"] is not None for v in _rain_agri.values()):
+    st.markdown("**📡 7-day rainfall by agricultural zone — crop supply signal**")
+    _ra_cols = st.columns(len(_rain_agri))
+    for _col, (_zone, _rv) in zip(_ra_cols, _rain_agri.items()):
+        if _rv["total_mm"] is not None:
+            _col.metric(_zone, f"{_rv['total_mm']}mm",
+                        delta=_rv["price_signal"], delta_color="off")
+    st.caption("📡 Open-Meteo · Rainfall → crop supply signal · updated hourly")
+
 else:
     st.error(
         f"⛔ **LIVE DATA UNAVAILABLE** — {fetched_at}. "
