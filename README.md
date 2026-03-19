@@ -3,6 +3,7 @@
 Agricultural market price intelligence for Kenyan smallholders.
 
 [![Live App](https://img.shields.io/badge/Live%20App-mazao--intel.streamlit.app-FF4B4B?logo=streamlit)](https://mazao-intel.streamlit.app)
+[![Live Data](https://img.shields.io/badge/Live%20Data-WFP/HDX%20%C2%B7%20Open-Meteo-00b4d8)](#mazao-intel)
 [![CI](https://github.com/gabrielmahia/mazao-intel/actions/workflows/ci.yml/badge.svg)](https://github.com/gabrielmahia/mazao-intel/actions)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey)](LICENSE)
 
