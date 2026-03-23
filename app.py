@@ -174,6 +174,38 @@ if is_live:
     )
 
 # ── Agricultural rainfall signal ─────────────────────────────────────────
+@st.cache_data(ttl=3600)
+def fetch_agri_rainfall():
+    """7-day rainfall for Kenya main agricultural zones from Open-Meteo."""
+    import json as _jmr
+    zones = {
+        "Rift Valley": (-0.30, 35.87),
+        "Central":     (-0.42, 36.95),
+        "Nyanza":      (-0.68, 34.77),
+        "Eastern":     (-1.37, 38.02),
+    }
+    results = {}
+    for zone, (lat, lon) in zones.items():
+        try:
+            url = (
+                "https://api.open-meteo.com/v1/forecast"
+                f"?latitude={lat}&longitude={lon}"
+                "&daily=precipitation_sum&forecast_days=7"
+                "&timezone=Africa%2FNairobi"
+            )
+            with urllib.request.urlopen(url, timeout=6) as r:
+                d = _jmr.loads(r.read())
+            precip = d.get("daily", {}).get("precipitation_sum", [])
+            total  = round(sum(p for p in precip if p is not None), 1)
+            results[zone] = {
+                "total_mm":     total,
+                "price_signal": "Possible oversupply" if total > 60 else (
+                    "Possible shortage" if total < 5 else "Normal outlook"),
+            }
+        except Exception:
+            results[zone] = {"total_mm": None, "price_signal": "-"}
+    return results
+
 _rain_agri = fetch_agri_rainfall()
 if any(v["total_mm"] is not None for v in _rain_agri.values()):
     st.markdown("**📡 7-day rainfall by agricultural zone — crop supply signal**")
