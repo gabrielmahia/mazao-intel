@@ -481,3 +481,15 @@ st.caption(
     "JuaMazao · Data: WFP Kenya Food Prices via HDX (CC BY IGO 3.0) · "
     "App: CC BY-NC-ND 4.0 · contact@aikungfu.dev · Not affiliated with WFP or HDX"
 )
+
+# -- Feedback sidebar ---------------------------------------------------------
+with st.sidebar:
+    st.markdown("---")
+    st.markdown(
+        "**Was this useful?**\n\n"
+        f"[:pencil: Leave feedback](https://docs.google.com/forms/d/e/1FAIpQLSff_cjR102HNUeYU428ROv56TScLBzsQRc1JTwY4wGizvTQKw/viewform) (2 min)\n\n"
+        "[:bug: Report a bug](https://github.com/gabrielmahia/mazao-intel/issues/new)\n\n"
+        "---\n"
+        "*Built by [Gabriel Mahia](https://aikungfu.dev)*\n\n"
+        "[Back to all tools](https://gabrielmahia.github.io)"
+    )
