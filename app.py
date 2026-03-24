@@ -89,6 +89,20 @@ html,body,[class*="css"]{font-family:'IBM Plex Sans',sans-serif;}
     [data-theme="dark"] [data-testid="stMetricDelta"],
     .stApp[data-theme="dark"] [data-testid="stMetricDelta"] { color: #cccccc !important; }
 
+
+    @media (prefers-color-scheme: dark) {
+        .alert-spike { background: #3d1015 !important; border-color: #dc3545 !important; color: #f1948a !important; }
+        .alert-ok    { background: #1a3d24 !important; border-color: #28a745 !important; color: #7dcea0 !important; }
+        .price-card  { background: #1a2535 !important; border-color: #6a994e !important; color: #b0d48a !important; }
+        .price-card .label { color: #99b0cc !important; }
+        .price-card .value { color: #d0f0b0 !important; }
+    }
+    [data-theme="dark"] .alert-spike, .stApp[data-theme="dark"] .alert-spike { background: #3d1015 !important; border-color: #dc3545 !important; color: #f1948a !important; }
+    [data-theme="dark"] .alert-ok,    .stApp[data-theme="dark"] .alert-ok    { background: #1a3d24 !important; border-color: #28a745 !important; color: #7dcea0 !important; }
+    [data-theme="dark"] .price-card,  .stApp[data-theme="dark"] .price-card  { background: #1a2535 !important; border-color: #6a994e !important; color: #b0d48a !important; }
+    [data-theme="dark"] .price-card .label, .stApp[data-theme="dark"] .price-card .label { color: #99b0cc !important; }
+    [data-theme="dark"] .price-card .value, .stApp[data-theme="dark"] .price-card .value { color: #d0f0b0 !important; }
+
 </style>
 """, unsafe_allow_html=True)
 
