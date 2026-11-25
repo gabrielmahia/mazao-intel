@@ -5,7 +5,7 @@ Agricultural market price intelligence for Kenyan smallholders.
 [![Live App](https://img.shields.io/badge/Live%20App-mazao--intel.streamlit.app-FF4B4B?logo=streamlit)](https://juamazao.streamlit.app)
 [![Live Data](https://img.shields.io/badge/Live%20Data-WFP/HDX%20%C2%B7%20Open-Meteo-00b4d8)](#mazao-intel)
 [![CI](https://github.com/gabrielmahia/mazao-intel/actions/workflows/ci.yml/badge.svg)](https://github.com/gabrielmahia/mazao-intel/actions)
-[![License](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey)](LICENSE)
+[![License: PolyForm Noncommercial](https://img.shields.io/badge/License-PolyForm%20Noncommercial%201.0.0-blue.svg)](LICENSE)
 
 > **Jua Mazao** /dʒuɑː mɑːzɑːɔ/ — *Kiswahili*: "Know your crops/produce".
 
@@ -29,7 +29,7 @@ Fetched live every 6 hours. When unavailable, the app stops and says so — no f
 
 ## IP & Collaboration
 
-© 2026 Gabriel Mahia · CC BY-NC-ND 4.0  
+© 2026 Gabriel Mahia · PolyForm Noncommercial 1.0.0  
 Data: WFP/HDX CC BY IGO 3.0  
 Not affiliated with WFP, HDX, or the Government of Kenya.
 ---
