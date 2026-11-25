@@ -493,7 +493,7 @@ with st.expander("📋 Full recent price data (last 60 days)"):
 st.divider()
 st.caption(
     "JuaMazao · Data: WFP Kenya Food Prices via HDX (CC BY IGO 3.0) · "
-    "App: CC BY-NC-ND 4.0 · contact@aikungfu.dev · Not affiliated with WFP or HDX"
+    "App: PolyForm Noncommercial 1.0.0 · contact@aikungfu.dev · Not affiliated with WFP or HDX"
 )
 
 # -- Feedback sidebar ---------------------------------------------------------
